@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "jest --verbose --runInBand",
-    "jsdoc": "jsdoc index.js"
+    "jsdoc": "jsdoc -d docs index.js"
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.3.13",
