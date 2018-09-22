@@ -71,6 +71,14 @@ class Simache{
       this.remove(key)
     }
 
+    if(this.size+bytes>this.max){
+      const keys=Object.getOwnPropertyNames(this.cache)
+      for(var i = 0; i < keys.length; i++){
+        if(this.cache[keys[i]].expiredAt<=Date.now()){
+          this.remove(keys[i])
+        }
+      }
+    }
     while(this.size+bytes>this.max){
       this.remove(this.keys[0])
     }
