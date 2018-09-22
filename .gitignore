@@ -1,0 +1,19 @@
+# Node build artifacts
+node_modules
+npm-debug.log
+
+# jsdoc output folder
+out
+
+# Local development
+.env
+*.env
+.env.*
+*.dev
+.DS_Store
+data
+*.log
+
+# Docker
+Dockerfile
+docker-compose.yml
